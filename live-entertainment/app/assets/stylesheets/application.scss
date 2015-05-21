@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'bootstrap-datetimepicker';
+
+
+body{ 
+	font-family: 'Sanchez', serif; 
+	background-image: url(../assets/dance.png);
+	background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+video#bgvid {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(assets/stripper1.jpg) no-repeat;
+	background-size: cover;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.full{top:0; left:0; height:100%;}
+.navbar{ margin-bottom: 0px; border-bottom: 3px solid grey; border-right: 0px; border-left: 0px;}
+.navbar_cont {
+	height: 100px;
+	background: #754746;
+	border-bottom: 5px solid red;
+	margin-bottom: 0px;
+}
+
+.notice, .alert { position: absolute; }
+
+.background--full-primary {
+	background: #754746;
+}
+
+.home-row {
+	height: 600px;
+}
+
+.hero-content {
+	padding-left: 40px;
+	padding-right: 40px; 
+}
+
+.text--color-1 {
+	color: #FFF;
+}
+
+.margin--r-tiny { margin-right: 5px; }
+
+.padding--r-tiny {
+	padding-right: 5px;
+}
+
+.padding--rl-tiny{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.padding--rl-small {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.hero-header { font-size: 48px; }
+.hero-slogan { font-size: 24px; }
+
+@media screen and (max-width: 600px) {
+
+  	.mobile--center {
+  		text-align: center;
+  		margin: auto;
+  	}
+
+}
